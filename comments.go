@@ -97,7 +97,7 @@ func (comments *Comments) Next() bool {
 	insta := item.insta
 	endpoint := comments.endpoint
 	query := map[string]string{
-		// "can_support_threading": "true",
+		"can_support_threading": "true",
 	}
 	if comments.NextID != nil {
 		next, _ := strconv.Unquote(string(comments.NextID))
